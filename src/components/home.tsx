@@ -7,6 +7,9 @@ import ServicesSection from "./medical/ServicesSection";
 import PriceComparison from "./medical/PriceComparison";
 import TestimonialsSection from "./medical/TestimonialsSection";
 import ContactSection from "./medical/ContactSection";
+import FAQSection from "./medical/FAQSection";
+import Footer from "./medical/Footer";
+import PatientJourneySection from "./medical/PatientJourneySection";
 
 interface HomeProps {
   onLanguageChange?: (language: string) => void;
@@ -41,14 +44,16 @@ const Home = ({
         />
         <ServicesSection onServiceClick={onServiceClick} />
         <PriceComparison />
+        <PatientJourneySection />
         <TestimonialsSection />
+        <FAQSection />
         <ContactSection
           onSubmit={onContactSubmit}
           onWhatsAppClick={onWhatsAppClick}
           onTelegramClick={onTelegramClick}
         />
       </main>
-      <div className="w-[800px] h-[600px]"></div>
+      <Footer />
     </div>
   );
 };

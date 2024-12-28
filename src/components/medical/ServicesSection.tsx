@@ -19,6 +19,8 @@ const ServicesSection = ({
   const { t } = useLanguage();
   const services = t("services.items");
 
+  console.log({ services });
+
   return (
     <section className="w-full py-24 bg-background/50">
       <div className="container mx-auto px-4">

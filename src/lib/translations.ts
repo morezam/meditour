@@ -1,3 +1,14 @@
+import {
+  Plane,
+  MessageCircle,
+  Stethoscope,
+  Building2,
+  FileCheck,
+  FileText,
+  CalendarCheck,
+  HeartPulse,
+} from "lucide-react";
+
 export const translations = {
   en: {
     header: {
@@ -81,6 +92,152 @@ export const translations = {
         available: "Available 24/7 to answer your inquiries",
       },
     },
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle:
+        "Answers to questions about medical and surgical services in Iran",
+      items: [
+        {
+          id: "procedures",
+          question: "What medical procedures are available in Iran?",
+          answer:
+            "Iran offers a wide range of medical procedures including cosmetic surgery, dental treatments, cardiac procedures, orthopedic surgeries, and fertility treatments. All procedures are performed by highly qualified specialists in state-of-the-art facilities.",
+        },
+        {
+          id: "visa",
+          question: "How can I obtain a medical visa for Iran?",
+          answer:
+            "Medical visas for Iran can be obtained through our assistance. We help coordinate with the relevant authorities and provide all necessary documentation. The process typically takes 7-10 working days, and we guide you through each step.",
+        },
+        {
+          id: "accommodation",
+          question:
+            "What accommodation options are available for medical tourists?",
+          answer:
+            "We offer various accommodation options ranging from luxury hotels to serviced apartments near medical facilities. All accommodations are carefully selected to ensure comfort and convenience during your recovery period.",
+        },
+        {
+          id: "cost",
+          question: "How much do medical procedures cost in Iran?",
+          answer:
+            "Medical procedures in Iran are typically 40-80% less expensive than in Western countries while maintaining high quality standards. The exact cost depends on the procedure. We provide detailed cost breakdowns during consultation.",
+        },
+        {
+          id: "recovery",
+          question: "What support is provided during the recovery period?",
+          answer:
+            "We provide comprehensive post-procedure care including regular check-ups, 24/7 medical support, transportation services, and assistance with any special needs during your recovery period.",
+        },
+        {
+          id: "language",
+          question: "Is language support available for international patients?",
+          answer:
+            "Yes, we provide professional medical interpreters fluent in Arabic, English, and other languages to ensure clear communication between you and your healthcare providers throughout your stay.",
+        },
+      ],
+    },
+    patientJourney: {
+      title: "Process Steps",
+      subtitle: "A step-by-step guide for patients from start to follow-up",
+      items: [
+        {
+          icon: MessageCircle,
+          title: "Initial Consultation",
+          description:
+            "Free online consultation to discuss your medical needs and preferences",
+        },
+        {
+          icon: FileCheck,
+          title: "Treatment Plan",
+          description:
+            "Receive a detailed treatment plan including costs and timeline",
+        },
+        {
+          icon: FileText,
+          title: "Visa & Documentation",
+          description:
+            "We assist with medical visa application and required documentation",
+        },
+        {
+          icon: Plane,
+          title: "Travel Arrangements",
+          description: "Flight booking assistance and airport pickup service",
+        },
+        {
+          icon: Building2,
+          title: "Accommodation",
+          description: "Comfortable accommodation near your medical facility",
+        },
+        {
+          icon: Stethoscope,
+          title: "Medical Procedure",
+          description:
+            "Your treatment by our experienced medical professionals",
+        },
+        {
+          icon: HeartPulse,
+          title: "Recovery & Care",
+          description: "Post-procedure care and recovery monitoring",
+        },
+        {
+          icon: CalendarCheck,
+          title: "Follow-up",
+          description:
+            "Continued support and follow-up care after returning home",
+        },
+      ],
+    },
+    footer: {
+      companyName: "Medical Tourism",
+      contact: "contact",
+      address: "123 Health Street, Tehran, Iran",
+      subtitle:
+        "We are committed to providing high-quality medical services to international patients",
+      items: [
+        {
+          header: "Quick Links",
+          links: [
+            {
+              title: "About",
+              link: "#",
+            },
+            {
+              title: "Services",
+              link: "#",
+            },
+            {
+              title: "Doctors",
+              link: "#",
+            },
+            {
+              title: "Testimonials",
+              link: "#",
+            },
+          ],
+        },
+        {
+          header: "Services",
+          links: [
+            {
+              title: "Cosmetic",
+              link: "#",
+            },
+            {
+              title: "Dental",
+              link: "#",
+            },
+            {
+              title: "Orthopedic",
+              link: "#",
+            },
+            {
+              title: "Overall Health",
+              link: "#",
+            },
+          ],
+        },
+      ],
+    },
   },
   ar: {
     header: {
@@ -161,6 +318,146 @@ export const translations = {
         telegram: "تواصل عبر تيليجرام",
         available: "متوفرون للرد على استفساراتكم على مدار الساعة",
       },
+    },
+    faq: {
+      title: "الأسئلة الشائعة",
+      subtitle:
+        "إجابات على الأسئلة المتعلقة بالخدمات الطبية والجراحية في إيران",
+      items: [
+        {
+          id: "procedures",
+          question: "ما هي الإجراءات الطبية المتوفرة في إيران؟",
+          answer:
+            "تقدم إيران مجموعة واسعة من الإجراءات الطبية بما في ذلك الجراحات التجميلية، علاجات الأسنان، العمليات القلبية، جراحات العظام، وعلاجات الخصوبة. جميع الإجراءات يتم تنفيذها بواسطة متخصصين مؤهلين في مرافق حديثة.",
+        },
+        {
+          id: "visa",
+          question: "كيف يمكنني الحصول على تأشيرة طبية لإيران؟",
+          answer:
+            "يمكن الحصول على التأشيرة الطبية لإيران بمساعدتنا. نحن ننسق مع السلطات المعنية ونوفر جميع الوثائق اللازمة. عادة ما تستغرق العملية 7-10 أيام عمل، وسنرشدك خلال كل خطوة.",
+        },
+        {
+          id: "accommodation",
+          question: "ما خيارات الإقامة المتوفرة للسياح الطبيين؟",
+          answer:
+            "نقدم خيارات إقامة متنوعة تتراوح بين الفنادق الفاخرة والشقق المخدّمة بالقرب من المرافق الطبية. جميع الإقامات مختارة بعناية لضمان الراحة والتسهيل خلال فترة التعافي.",
+        },
+        {
+          id: "cost",
+          question: "كم تكلفة الإجراءات الطبية في إيران؟",
+          answer:
+            "تعد الإجراءات الطبية في إيران أقل تكلفة بنسبة 40-80% مقارنة بالدول الغربية مع الحفاظ على معايير جودة عالية. تعتمد التكلفة الدقيقة على الإجراء، وسنوفر تفاصيل التكاليف خلال الاستشارة.",
+        },
+        {
+          id: "recovery",
+          question: "ما الدعم الذي يتم توفيره خلال فترة التعافي؟",
+          answer:
+            "نوفر رعاية شاملة بعد الإجراء تتضمن فحوصات منتظمة، دعمًا طبيًا متاحًا على مدار الساعة، خدمات نقل، ومساعدة مع أي احتياجات خاصة خلال فترة التعافي.",
+        },
+        {
+          id: "language",
+          question: "هل يتوفر دعم لغوي للمرضى الدوليين؟",
+          answer:
+            "نعم، نوفر مترجمين طبيين محترفين يجيدون اللغة العربية، الإنجليزية، ولغات أخرى لضمان التواصل الواضح بينك وبين مقدمي الرعاية الصحية طوال فترة إقامتك.",
+        },
+      ],
+    },
+    patientJourney: {
+      title: "خطوات العملية",
+      subtitle: "دليل تفصيلي للمرضى من البداية إلى المتابعة",
+      items: [
+        {
+          icon: MessageCircle,
+          title: "الاستشارة الأولية",
+          description:
+            "استشارة مجانية عبر الإنترنت لمناقشة احتياجاتك الطبية وتفضيلاتك",
+        },
+        {
+          icon: FileCheck,
+          title: "خطة العلاج",
+          description: "استلم خطة علاج مفصلة تتضمن التكاليف والجدول الزمني",
+        },
+        {
+          icon: FileText,
+          title: "التأشيرة والوثائق",
+          description: "نساعدك في طلب التأشيرة الطبية وإعداد الوثائق المطلوبة",
+        },
+        {
+          icon: Plane,
+          title: "ترتيبات السفر",
+          description: "مساعدة في حجز الرحلات وخدمة استقبال من المطار",
+        },
+        {
+          icon: Building2,
+          title: "الإقامة",
+          description: "إقامة مريحة بالقرب من المرافق الطبية الخاصة بك",
+        },
+        {
+          icon: Stethoscope,
+          title: "الإجراء الطبي",
+          description: "علاجك بواسطة محترفين طبيين ذوي خبرة",
+        },
+        {
+          icon: HeartPulse,
+          title: "التعافي والرعاية",
+          description: "رعاية بعد العملية ومتابعة التعافي",
+        },
+        {
+          icon: CalendarCheck,
+          title: "المتابعة",
+          description: "دعم مستمر ورعاية متابعة بعد عودتك إلى بلدك",
+        },
+      ],
+    },
+    footer: {
+      companyName: "السياحة الطبية",
+      contact: "اتصل بنا",
+      address: "شارع الصحة 123، طهران، إيران",
+      subtitle: "نحن ملتزمون بتقديم خدمات طبية عالية الجودة للمرضى الدوليين",
+      items: [
+        {
+          header: "روابط سريعة",
+          links: [
+            {
+              title: "من نحن",
+              link: "#",
+            },
+            {
+              title: "الخدمات",
+              link: "#",
+            },
+            {
+              title: "الأطباء",
+              link: "#",
+            },
+            {
+              title: "آراء العملاء",
+              link: "#",
+            },
+          ],
+        },
+        {
+          header: "الخدمات",
+          links: [
+            {
+              title: "الجراحة التجميلية",
+              link: "#",
+            },
+            {
+              title: "علاج الأسنان",
+              link: "#",
+            },
+            {
+              title: "جراحة العظام",
+              link: "#",
+            },
+            {
+              title: "الصحة العامة",
+              link: "#",
+            },
+          ],
+        },
+      ],
     },
   },
   fa: {
@@ -244,6 +541,149 @@ export const translations = {
         telegram: "تماس از طریق تلگرام",
         available: "۲۴ ساعته در دسترس برای پاسخگویی به سوالات شما",
       },
+    },
+    faq: {
+      title: "سؤالات متداول",
+      subtitle: "پاسخ به سوالات مربوط به خدمات پزشکی و جراحی در ایران",
+      items: [
+        {
+          id: "procedures",
+          question: "چه خدمات پزشکی در ایران ارائه می‌شود؟",
+          answer:
+            "ایران طیف گسترده‌ای از خدمات پزشکی شامل جراحی‌های زیبایی، درمان‌های دندانپزشکی، عمل‌های قلبی، جراحی‌های ارتوپدی و درمان‌های باروری را ارائه می‌دهد. تمام خدمات توسط متخصصان واجد شرایط در مراکز مدرن انجام می‌شود.",
+        },
+        {
+          id: "visa",
+          question: "چگونه می‌توانم ویزای پزشکی ایران را دریافت کنم؟",
+          answer:
+            "ویزاهای پزشکی ایران با کمک ما قابل دریافت هستند. ما هماهنگی‌های لازم با مقامات مربوطه را انجام داده و مدارک مورد نیاز را فراهم می‌کنیم. این فرآیند معمولاً ۷-۱۰ روز کاری طول می‌کشد و ما شما را در هر مرحله راهنمایی می‌کنیم.",
+        },
+        {
+          id: "accommodation",
+          question: "چه گزینه‌های اقامتی برای گردشگران پزشکی موجود است؟",
+          answer:
+            "ما گزینه‌های اقامتی متنوعی از هتل‌های لوکس تا آپارتمان‌های خدماتی نزدیک به مراکز پزشکی ارائه می‌دهیم. تمام اقامتگاه‌ها با دقت برای اطمینان از راحتی و آسایش شما در دوره بهبودی انتخاب می‌شوند.",
+        },
+        {
+          id: "cost",
+          question: "هزینه خدمات پزشکی در ایران چقدر است؟",
+          answer:
+            "خدمات پزشکی در ایران معمولاً ۴۰-۸۰٪ ارزان‌تر از کشورهای غربی است، در حالی که استانداردهای کیفیت بالا حفظ می‌شود. هزینه دقیق به نوع خدمات بستگی دارد و ما جزئیات هزینه‌ها را در مشاوره ارائه می‌دهیم.",
+        },
+        {
+          id: "recovery",
+          question: "چه حمایتی در دوره بهبودی ارائه می‌شود؟",
+          answer:
+            "ما مراقبت‌های کامل پس از عمل شامل چکاپ‌های منظم، پشتیبانی پزشکی ۲۴/۷، خدمات حمل و نقل و کمک به نیازهای ویژه در دوره بهبودی ارائه می‌دهیم.",
+        },
+        {
+          id: "language",
+          question: "آیا پشتیبانی زبانی برای بیماران بین‌المللی وجود دارد؟",
+          answer:
+            "بله، ما مترجمان حرفه‌ای پزشکی مسلط به زبان عربی، انگلیسی و زبان‌های دیگر را برای اطمینان از ارتباط واضح بین شما و ارائه‌دهندگان خدمات پزشکی ارائه می‌دهیم.",
+        },
+      ],
+    },
+    patientJourney: {
+      title: "مراحل انجام کار",
+      subtitle: "راهنمای دقیق بیماران از شروع تا پیگیری",
+      items: [
+        {
+          icon: MessageCircle,
+          title: "مشاوره اولیه",
+          description:
+            "مشاوره رایگان آنلاین برای بحث در مورد نیازها و ترجیحات پزشکی شما",
+        },
+        {
+          icon: FileCheck,
+          title: "طرح درمان",
+          description:
+            "دریافت یک برنامه درمانی دقیق شامل هزینه‌ها و جدول زمانی",
+        },
+        {
+          icon: FileText,
+          title: "ویزای پزشکی و مدارک",
+          description:
+            "ما در درخواست ویزای پزشکی و تهیه مدارک لازم کمک می‌کنیم",
+        },
+        {
+          icon: Plane,
+          title: "ترتیبات سفر",
+          description: "کمک در رزرو پرواز و خدمات استقبال در فرودگاه",
+        },
+        {
+          icon: Building2,
+          title: "اقامت",
+          description: "اقامت راحت نزدیک به مرکز درمانی شما",
+        },
+        {
+          icon: Stethoscope,
+          title: "روند درمانی",
+          description: "درمان شما توسط متخصصان پزشکی مجرب",
+        },
+        {
+          icon: HeartPulse,
+          title: "بهبودی و مراقبت",
+          description: "مراقبت‌های پس از عمل و نظارت بر بهبودی",
+        },
+        {
+          icon: CalendarCheck,
+          title: "پیگیری",
+          description:
+            "پشتیبانی مداوم و مراقبت‌های پیگیری پس از بازگشت به خانه",
+        },
+      ],
+    },
+    footer: {
+      companyName: "گردشگری پزشکی",
+      contact: "تماس",
+      address: "خیابان سلامت ۱۲۳، تهران، ایران",
+      subtitle:
+        "ما به ارائه خدمات پزشکی با کیفیت بالا به بیماران بین‌المللی متعهدیم",
+      items: [
+        {
+          header: "لینک‌های سریع",
+          links: [
+            {
+              title: "درباره ما",
+              link: "#",
+            },
+            {
+              title: "خدمات",
+              link: "#",
+            },
+            {
+              title: "پزشکان",
+              link: "#",
+            },
+            {
+              title: "نظرات مشتریان",
+              link: "#",
+            },
+          ],
+        },
+        {
+          header: "خدمات",
+          links: [
+            {
+              title: "جراحی زیبایی",
+              link: "#",
+            },
+            {
+              title: "درمان دندانپزشکی",
+              link: "#",
+            },
+            {
+              title: "ارتوپدی",
+              link: "#",
+            },
+            {
+              title: "سلامت عمومی",
+              link: "#",
+            },
+          ],
+        },
+      ],
     },
   },
 };
