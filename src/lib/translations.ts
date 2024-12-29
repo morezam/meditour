@@ -136,6 +136,79 @@ export const translations = {
         },
       ],
     },
+    packages: {
+      title: "Customized Treatment Packages",
+      subtitle:
+        "Experience world-class medical care combined with Iran's rich cultural heritage",
+      popular: "Most Popular",
+      customize: "Customize Package",
+      features: {
+        dental: {
+          title: "Dental Excellence",
+          description:
+            "State-of-the-art dental treatments including implants, veneers, and whitening",
+        },
+        aesthetic: {
+          title: "Aesthetic Procedures",
+          description:
+            "Advanced cosmetic surgeries and non-invasive beauty treatments",
+        },
+        accommodation: {
+          title: "Luxury Stays",
+          description:
+            "Premium hotel accommodations with dedicated medical support",
+        },
+        tours: {
+          title: "Cultural Tours",
+          description:
+            "Guided tours to Iran's most beautiful historical sites and attractions",
+        },
+        cuisine: {
+          title: "Persian Cuisine",
+          description:
+            "Experience authentic Iranian dishes and traditional delicacies",
+        },
+        souvenirs: {
+          title: "Cultural Gifts",
+          description:
+            "Handpicked Persian souvenirs and traditional handicrafts",
+        },
+      },
+      essential: {
+        title: "Essential Care",
+        description: "Perfect for focused medical treatments",
+        features: {
+          consultation: "Medical consultation and treatment plan",
+          treatment: "Selected medical or dental procedure",
+          accommodation: "3-star hotel accommodation",
+          transfer: "Airport and hospital transfers",
+        },
+      },
+      premium: {
+        title: "Premium Experience",
+        description: "Combine medical care with cultural experiences",
+        features: {
+          allEssential: "All Essential Care features",
+          luxury: "4-star luxury hotel stay",
+          tours: "Two cultural city tours",
+          concierge: "24/7 personal concierge",
+          cuisine: "Traditional Persian dinner experience",
+          souvenirs: "Curated Persian souvenirs package",
+        },
+      },
+      luxury: {
+        title: "Luxury Journey",
+        description: "The ultimate medical tourism experience",
+        features: {
+          allPremium: "All Premium Experience features",
+          vip: "5-star luxury hotel suite",
+          exclusive: "Private cultural tours with guide",
+          family: "Family accommodation included",
+          extended: "Extended stay and recovery support",
+          gifts: "Premium Persian gift collection",
+        },
+      },
+    },
     patientJourney: {
       title: "Process Steps",
       subtitle: "A step-by-step guide for patients from start to follow-up",
@@ -361,6 +434,74 @@ export const translations = {
             "نعم، نوفر مترجمين طبيين محترفين يجيدون اللغة العربية، الإنجليزية، ولغات أخرى لضمان التواصل الواضح بينك وبين مقدمي الرعاية الصحية طوال فترة إقامتك.",
         },
       ],
+    },
+    packages: {
+      title: "باقات العلاج المخصصة",
+      subtitle:
+        "تجربة رعاية طبية عالمية المستوى مع التراث الثقافي الإيراني الغني",
+      popular: "الأكثر طلباً",
+      customize: "تخصيص الباقة",
+      features: {
+        dental: {
+          title: "التميز في طب الأسنان",
+          description:
+            "علاجات أسنان متطورة تشمل زراعة الأسنان والتلبيسات والتبييض",
+        },
+        aesthetic: {
+          title: "الإجراءات التجميلية",
+          description: "عمليات تجميل متقدمة وعلاجات تجميلية غير جراحية",
+        },
+        accommodation: {
+          title: "إقامة فاخرة",
+          description: "إقامة في فنادق فاخرة مع دعم طبي مخصص",
+        },
+        tours: {
+          title: "جولات ثقافية",
+          description: "جولات مع مرشد سياحي لأجمل المواقع التاريخية في إيران",
+        },
+        cuisine: {
+          title: "المطبخ الفارسي",
+          description: "تجربة الأطباق الإيرانية الأصيلة والمأكولات التقليدية",
+        },
+        souvenirs: {
+          title: "هدايا ثقافية",
+          description: "تذكارات فارسية منتقاة وحرف يدوية تقليدية",
+        },
+      },
+      essential: {
+        title: "الرعاية الأساسية",
+        description: "مثالية للعلاجات الطبية المركزة",
+        features: {
+          consultation: "استشارة طبية وخطة علاج",
+          treatment: "إجراء طبي أو علاج أسنان محدد",
+          accommodation: "إقامة في فندق 3 نجوم",
+          transfer: "خدمة النقل من وإلى المطار والمستشفى",
+        },
+      },
+      premium: {
+        title: "التجربة المميزة",
+        description: "دمج الرعاية الطبية مع التجارب الثقافية",
+        features: {
+          allEssential: "جميع مميزات الرعاية الأساسية",
+          luxury: "إقامة في فندق 4 نجوم فاخر",
+          tours: "جولتان ثقافيتان في المدينة",
+          concierge: "خدمة كونسيرج شخصية على مدار الساعة",
+          cuisine: "تجربة عشاء فارسي تقليدي",
+          souvenirs: "باقة تذكارات فارسية منتقاة",
+        },
+      },
+      luxury: {
+        title: "الرحلة الفاخرة",
+        description: "تجربة السياحة الطبية المتكاملة",
+        features: {
+          allPremium: "جميع مميزات التجربة المميزة",
+          vip: "جناح فاخر في فندق 5 نجوم",
+          exclusive: "جولات ثقافية خاصة مع مرشد",
+          family: "إقامة عائلية مشمولة",
+          extended: "دعم إقامة وتعافي ممتد",
+          gifts: "مجموعة هدايا فارسية فاخرة",
+        },
+      },
     },
     patientJourney: {
       title: "خطوات العملية",
@@ -684,6 +825,74 @@ export const translations = {
           ],
         },
       ],
+    },
+    packages: {
+      title: "بسته‌های درمانی سفارشی",
+      subtitle:
+        "تجربه خدمات درمانی در سطح جهانی همراه با میراث فرهنگی غنی ایران",
+      popular: "پرطرفدار",
+      customize: "سفارشی‌سازی بسته",
+      features: {
+        dental: {
+          title: "خدمات دندانپزشکی برتر",
+          description:
+            "درمان‌های پیشرفته دندانپزشکی شامل ایمپلنت، لمینت و سفیدکردن",
+        },
+        aesthetic: {
+          title: "خدمات زیبایی",
+          description: "جراحی‌های زیبایی پیشرفته و درمان‌های زیبایی غیرتهاجمی",
+        },
+        accommodation: {
+          title: "اقامت لوکس",
+          description: "اقامت در هتل‌های مجلل با پشتیبانی پزشکی اختصاصی",
+        },
+        tours: {
+          title: "تورهای فرهنگی",
+          description: "گشت‌های راهنمادار به زیباترین مکان‌های تاریخی ایران",
+        },
+        cuisine: {
+          title: "آشپزی ایرانی",
+          description: "تجربه غذاهای اصیل ایرانی و خوراکی‌های سنتی",
+        },
+        souvenirs: {
+          title: "هدایای فرهنگی",
+          description: "سوغات‌های منتخب ایرانی و صنایع دستی سنتی",
+        },
+      },
+      essential: {
+        title: "مراقبت اساسی",
+        description: "مناسب برای درمان‌های پزشکی متمرکز",
+        features: {
+          consultation: "مشاوره پزشکی و برنامه درمانی",
+          treatment: "خدمات پزشکی یا دندانپزشکی انتخابی",
+          accommodation: "اقامت در هتل ۳ ستاره",
+          transfer: "خدمات ترانسفر فرودگاهی و بیمارستانی",
+        },
+      },
+      premium: {
+        title: "تجربه ممتاز",
+        description: "ترکیب مراقبت‌های پزشکی با تجربیات فرهنگی",
+        features: {
+          allEssential: "تمام امکانات بسته مراقبت اساسی",
+          luxury: "اقامت در هتل ۴ ستاره لوکس",
+          tours: "دو تور فرهنگی شهری",
+          concierge: "خدمات کانسیرژ ۲۴ ساعته",
+          cuisine: "تجربه شام سنتی ایرانی",
+          souvenirs: "بسته سوغات منتخب ایرانی",
+        },
+      },
+      luxury: {
+        title: "سفر لوکس",
+        description: "تجربه کامل گردشگری پزشکی",
+        features: {
+          allPremium: "تمام امکانات بسته تجربه ممتاز",
+          vip: "سوئیت لوکس در هتل ۵ ستاره",
+          exclusive: "تورهای فرهنگی خصوصی با راهنما",
+          family: "اقامت خانوادگی شامل شده",
+          extended: "پشتیبانی اقامت و بهبودی طولانی مدت",
+          gifts: "مجموعه هدایای ویژه ایرانی",
+        },
+      },
     },
   },
 };

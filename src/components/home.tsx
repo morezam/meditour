@@ -5,6 +5,7 @@ import Header from "./medical/Header";
 import HeroSection from "./medical/HeroSection";
 import ServicesSection from "./medical/ServicesSection";
 import PriceComparison from "./medical/PriceComparison";
+import TreatmentPackages from "./medical/TreatmentPackages";
 import TestimonialsSection from "./medical/TestimonialsSection";
 import ContactSection from "./medical/ContactSection";
 import FAQSection from "./medical/FAQSection";
@@ -38,22 +39,41 @@ const Home = ({
     <div className="min-h-screen bg-background" dir={dir}>
       <Header onLanguageChange={handleLanguageChange} onNavigate={onNavigate} />
       <main>
-        <HeroSection
-          onContactClick={() => onNavigate("contact")}
-          onWhatsAppClick={onWhatsAppClick}
-        />
-        <ServicesSection onServiceClick={onServiceClick} />
-        <PriceComparison />
-        <PatientJourneySection />
-        <TestimonialsSection />
-        <FAQSection />
-        <ContactSection
-          onSubmit={onContactSubmit}
-          onWhatsAppClick={onWhatsAppClick}
-          onTelegramClick={onTelegramClick}
-        />
+        <div className="animate-fade-down">
+          <HeroSection
+            onContactClick={() => onNavigate("contact")}
+            onWhatsAppClick={onWhatsAppClick}
+          />
+        </div>
+        <div className="animate-fade-up [animation-delay:200ms]">
+          <ServicesSection onServiceClick={onServiceClick} />
+        </div>
+        <div className="animate-fade-up [animation-delay:400ms]">
+          <PriceComparison />
+        </div>
+        <div className="animate-fade-up [animation-delay:600ms]">
+          <TreatmentPackages />
+        </div>
+        <div className="animate-fade-up [animation-delay:800ms]">
+          <PatientJourneySection />
+        </div>
+        <div className="animate-fade-up [animation-delay:1000ms]">
+          <TestimonialsSection />
+        </div>
+        <div className="animate-fade-up [animation-delay:1200ms]">
+          <FAQSection />
+        </div>
+        <div className="animate-fade-up [animation-delay:1400ms]">
+          <ContactSection
+            onSubmit={onContactSubmit}
+            onWhatsAppClick={onWhatsAppClick}
+            onTelegramClick={onTelegramClick}
+          />
+        </div>
       </main>
-      <Footer />
+      <div className="animate-fade-up [animation-delay:1600ms]">
+        <Footer />
+      </div>
     </div>
   );
 };
