@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 import { translations } from "./translations";
 
 type Language = "ar" | "en" | "fa";
@@ -15,7 +15,20 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("ar");
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window !== "undefined") {
+      return (localStorage.getItem("language") as Language) || "ar";
+    }
+    return "ar";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("language", language);
+    document.documentElement.setAttribute(
+      "dir",
+      language === "en" ? "ltr" : "rtl",
+    );
+  }, [language]);
 
   const dir = language === "en" ? "ltr" : "rtl";
 

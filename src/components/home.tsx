@@ -14,7 +14,6 @@ import PatientJourneySection from "./medical/PatientJourneySection";
 
 interface HomeProps {
   onLanguageChange?: (language: string) => void;
-  onNavigate?: (section: string) => void;
   onServiceClick?: (serviceId: string) => void;
   onContactSubmit?: (data: any) => void;
   onWhatsAppClick?: () => void;
@@ -22,7 +21,6 @@ interface HomeProps {
 }
 
 const Home = ({
-  onNavigate = () => console.log("Navigation clicked"),
   onServiceClick = (id: string) => console.log(`Service ${id} clicked`),
   onContactSubmit = () => console.log("Contact form submitted"),
   onWhatsAppClick = () => console.log("WhatsApp clicked"),
@@ -37,33 +35,39 @@ const Home = ({
 
   return (
     <div className="min-h-screen bg-background" dir={dir}>
-      <Header onLanguageChange={handleLanguageChange} onNavigate={onNavigate} />
+      <Header onLanguageChange={handleLanguageChange} />
       <main>
         <div className="animate-fade-down">
           <HeroSection
-            onContactClick={() => onNavigate("contact")}
+            onContactClick={() => {
+              const contactSection = document.getElementById("contact");
+              contactSection?.scrollIntoView({ behavior: "smooth" });
+            }}
             onWhatsAppClick={onWhatsAppClick}
           />
         </div>
-        <div className="animate-fade-up [animation-delay:200ms]">
+        <div id="services" className="animate-fade-up [animation-delay:200ms]">
           <ServicesSection onServiceClick={onServiceClick} />
         </div>
         <div className="animate-fade-up [animation-delay:400ms]">
           <PriceComparison />
         </div>
-        <div className="animate-fade-up [animation-delay:600ms]">
+        <div id="packages" className="animate-fade-up [animation-delay:600ms]">
           <TreatmentPackages />
         </div>
         <div className="animate-fade-up [animation-delay:800ms]">
           <PatientJourneySection />
         </div>
-        <div className="animate-fade-up [animation-delay:1000ms]">
+        <div
+          id="testimonials"
+          className="animate-fade-up [animation-delay:1000ms]"
+        >
           <TestimonialsSection />
         </div>
         <div className="animate-fade-up [animation-delay:1200ms]">
           <FAQSection />
         </div>
-        <div className="animate-fade-up [animation-delay:1400ms]">
+        <div id="contact" className="animate-fade-up [animation-delay:1400ms]">
           <ContactSection
             onSubmit={onContactSubmit}
             onWhatsAppClick={onWhatsAppClick}

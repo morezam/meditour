@@ -21,12 +21,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface HeaderProps {
   onLanguageChange?: (language: string) => void;
-  onNavigate?: (section: string) => void;
 }
 
 const Header = ({
   onLanguageChange = () => console.log("Language changed"),
-  onNavigate = () => console.log("Navigation clicked"),
 }: HeaderProps) => {
   const { t, language, setLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
@@ -35,6 +33,28 @@ const Header = ({
     setLanguage(newLang as "ar" | "en" | "fa");
     onLanguageChange(newLang);
   };
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerOffset = 80; // Height of the fixed header
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const navItems = [
+    { key: "services", label: t("header.services") },
+    { key: "packages", label: t("header.packages") },
+    { key: "testimonials", label: t("header.testimonials") },
+    { key: "contact", label: t("header.contact") },
+  ];
 
   return (
     <header className="sticky top-0 w-full h-20 bg-background/80 backdrop-blur-lg border-b border-border z-50 px-4 md:px-6">
@@ -52,15 +72,10 @@ const Header = ({
         <div className="hidden lg:flex items-center space-x-8">
           <NavigationMenu dir={language === "en" ? "ltr" : "rtl"}>
             <NavigationMenuList className="space-x-2">
-              {[
-                { key: "services", label: t("header.services") },
-                { key: "doctors", label: t("header.doctors") },
-                { key: "testimonials", label: t("header.testimonials") },
-                { key: "contact", label: t("header.contact") },
-              ].map((item) => (
+              {navItems.map((item) => (
                 <NavigationMenuItem key={item.key}>
                   <NavigationMenuTrigger
-                    onClick={() => onNavigate(item.key)}
+                    onClick={() => scrollToSection(item.key)}
                     className="bg-transparent hover:bg-accent transition-colors"
                   >
                     {item.label}
@@ -115,17 +130,14 @@ const Header = ({
                   className="flex flex-col space-y-4 mt-6"
                   dir={language === "en" ? "ltr" : "rtl"}
                 >
-                  {[
-                    { key: "services", label: t("header.services") },
-                    { key: "doctors", label: t("header.doctors") },
-                    { key: "testimonials", label: t("header.testimonials") },
-                    { key: "contact", label: t("header.contact") },
-                  ].map((item) => (
+                  {navItems.map((item) => (
                     <Button
                       key={item.key}
                       variant="ghost"
                       className="w-full justify-start hover:bg-accent hover:text-primary transition-colors"
-                      onClick={() => onNavigate(item.key)}
+                      onClick={() => {
+                        scrollToSection(item.key);
+                      }}
                     >
                       {item.label}
                     </Button>

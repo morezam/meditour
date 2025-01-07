@@ -33,18 +33,25 @@ const PriceComparison = ({
       priceUAE: 2000,
     },
     {
-      name: "Knee Replacement",
-      priceIran: 4500,
-      priceUS: 35000,
-      priceUK: 28000,
-      priceUAE: 18000,
+      name: "Rhinoplasty",
+      priceIran: 2500,
+      priceUS: 12000,
+      priceUK: 8000,
+      priceUAE: 6000,
     },
     {
-      name: "Hair Transplant",
-      priceIran: 2000,
+      name: "Face Lift",
+      priceIran: 3500,
       priceUS: 15000,
       priceUK: 12000,
-      priceUAE: 8000,
+      priceUAE: 9000,
+    },
+    {
+      name: "Dental Veneers",
+      priceIran: 400,
+      priceUS: 2000,
+      priceUK: 1500,
+      priceUAE: 1000,
     },
   ],
   onLearnMore = () => console.log("Learn more clicked"),
@@ -55,10 +62,10 @@ const PriceComparison = ({
     <section className="w-full py-24 bg-gradient-to-br from-accent to-accent/50">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-right mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-l from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 py-2 bg-gradient-to-l from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
             {t("priceComparison.title")}
           </h2>
-          <p className="text-muted-foreground text-xl leading-relaxed max-w-3xl mr-auto">
+          <p className="text-muted-foreground text-xl leading-relaxed">
             {t("priceComparison.subtitle")}
           </p>
         </div>

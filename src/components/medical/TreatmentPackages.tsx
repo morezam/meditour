@@ -113,10 +113,10 @@ const TreatmentPackages = () => {
     <section className="w-full overflow-x-hidden py-24 bg-gradient-to-br from-background to-background/50">
       <div className="container mx-auto px-4">
         <div className="text-right mb-16 animate-fade-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-l from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 py-2 bg-gradient-to-l from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
             {t("packages.title")}
           </h2>
-          <p className="text-muted-foreground text-xl leading-relaxed max-w-3xl mr-auto">
+          <p className="text-muted-foreground text-xl leading-relaxed">
             {t("packages.subtitle")}
           </p>
         </div>

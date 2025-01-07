@@ -10,10 +10,10 @@ const PatientJourneySection = () => {
     <section className="w-full py-24 bg-gradient-to-br from-accent to-accent/50">
       <div className="container mx-auto px-4">
         <div className="text-right mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-l from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 py-2 bg-gradient-to-l from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
             {t("patientJourney.title")}
           </h2>
-          <p className="text-muted-foreground text-xl leading-relaxed max-w-3xl mr-auto">
+          <p className="text-muted-foreground text-xl leading-relaxed">
             {t("patientJourney.subtitle")}
           </p>
         </div>
