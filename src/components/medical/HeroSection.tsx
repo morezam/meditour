@@ -20,7 +20,7 @@ const HeroSection = ({
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/90 to-purple-600/90 mix-blend-multiply" />
         <img
-          src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=80&w=2000"
+          src="hero2.jpg"
           alt="Medical Facility"
           className="w-full h-full object-cover scale-105 animate-slow-zoom"
         />
