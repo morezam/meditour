@@ -58,16 +58,6 @@ const HeroSection = ({
             </Button>
           </div>
         </div>
-
-        {/* Trust Indicators */}
-        <div className="absolute bottom-12 left-8 flex gap-6">
-          <div className="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-lg">
-            <p className="text-white text-sm font-medium">ISO 9001:2015</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-lg">
-            <p className="text-white text-sm font-medium">JCI Accredited</p>
-          </div>
-        </div>
       </div>
 
       {/* Decorative Elements */}
